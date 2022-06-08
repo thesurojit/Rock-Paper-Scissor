@@ -1,0 +1,104 @@
+body {
+    margin-top: 2%;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+}
+
+.game {
+    display: grid;
+    place-items: center;
+    text-align: center;
+    margin-top: 5vh;
+}
+
+input {
+    text-align: center;
+    margin: 12% 5% 10% 3%;
+
+}
+
+.img {
+    margin-top: 2%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-image: none;
+}
+
+img {
+    width: 25vw;
+    height: 30vh;
+    border-radius: 3vw;
+}
+
+img:hover {
+    box-shadow: 1px 1px 4px 1px black;
+}
+
+.name {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.form-control {
+    height: 5vh;
+    border-radius: 2vw;
+}
+
+h1 {
+    text-align: center;
+}
+
+#win {
+    font-family: Georgia, 'Times New Roman', Times, serif
+}
+
+#paper1,
+#scissor1,
+#stone1 {
+    display: none;
+    box-shadow: none;
+
+}
+
+.paperName,
+.scissorName,
+.stoneName {
+    display: none;
+}
+
+#stone:hover+.stoneName {
+    display: block;
+}
+
+#scissor:hover+.scissorName {
+    display: block;
+}
+
+#paper:hover+.paperName {
+    display: block;
+}
+
+a {
+    text-decoration: none;
+    color: black;
+}
+
+
+
+.Gname {}
+
+@media screen and (min-width:320px) and (max-width:480px) {
+    img {
+        height: 30vh;
+        width: 35vw;
+    }
+}
+
+@media screen and (min-width:1025px) {
+    .form-control {
+        width: 100%;
+        height: 5vh;
+        border-radius: 2vw;
+    }
+}
